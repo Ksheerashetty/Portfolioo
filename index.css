@@ -1,0 +1,124 @@
+body{
+  background-color: rgb(218, 79, 79);
+  color: rgb(255, 255, 255);
+  font-family: 'Raleway', sans-serif;
+}
+:root{
+  --primary:#fff;
+  --secondary: #000;
+  --textcolor:red;
+
+
+}
+.container{
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: var(--primary);
+  overflow: hidden;
+
+}
+header{
+  width: 80%;
+  /* min-height: 100vh; */
+  padding: 0 8%;
+  position: relative;
+  overflow: hidden;
+
+}
+nav{
+
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  flex-direction: row;
+  justify-content: space-between; 
+  width: 100%;
+  /* border: 2px solid saddlebrown; */
+}
+.logo{
+ 
+  margin: 10px;
+padding: 20px;
+  font-size:xx-large;
+  font-weight: bolder;
+}
+.menu{
+  /* border: 2px solid blue; */
+  padding: 20px;
+  margin: 20px;
+  }
+  .menu ul{
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    font-weight: 700;
+    padding: 2rem;
+    font-size: 20px;
+    text-decoration: none;
+   
+  }
+  .menu ul li{
+    display: inline-block;
+    margin: 5px 15px;
+    
+  }
+  .menu ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    
+  }
+ 
+  .theme{
+      /* border: 2px solid blue; */
+      padding: 20px;
+      margin: 20px;
+      float: right;
+  }
+  .pic {
+    width: 500px;
+    height: 450px;
+    margin: 50px;
+    background-size: cover;
+    background-image: url("ksheera.jpg");
+  }
+  
+  .pic:hover {
+    background-image: url("ksheera_avatar.png");
+  }
+  .intro{
+    margin: 30px;
+    display: flex;
+    border: 2px solid salmon;
+    justify-content: center; /* Align items from left to right */
+    align-items: center; 
+  }
+  .about{
+    margin: 10px;
+    border: 2px solid black;
+    width: 600px;
+    height: 450px;
+  }
+  .projects{
+    border: 2px solid rgb(170, 238, 224);
+    display: flex;
+    flex-direction: column; /* To stack child elements vertically */
+    align-items: center; /* To horizontally center child elements */
+    justify-content: center;
+  }
+  .cards{
+    border: 2px solid slateblue;
+    display: flex;
+    margin: 20px;
+    padding: 50px;
+    height: 70%;
+    width: 70%;
+    
+
+  }
+  .cards div{
+    border: 2px solid pink;
+    margin: 100px;
+    padding: 50px;
+  }
