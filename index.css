@@ -45,12 +45,14 @@ background-color: black;
 }
 
   .pic {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     margin: 50px;
-    background-size:auto;
+    background-size:cover;
     background-image: url("ksheera.jpg");
     border-radius: 1rem;
+   
+
   }
   
   .pic:hover {
@@ -62,40 +64,50 @@ background-color: black;
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
+    margin-top: 100px;
+   
   }
   .intro-heading{
-    color: rgb(255, 255, 255);
+    color: gray;
     font-size: xx-large;
     font-weight: bolder;
-    margin: 100px;
+   
+  }
+  .inner{
+    display: flex;
+    flex-direction: row;
   }
   .about{
-    margin: 10px;
-    border: 2px solid black;
-    width: 600px;
-    height: 450px;
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+    border-radius: 1rem;  
+    
   }
   .projects{
     border: 2px solid rgb(170, 238, 224);
     display: flex;
-    flex-direction: column; /* To stack child elements vertically */
-    align-items: center; /* To horizontally center child elements */
-    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
   }
-  .cards{
-    border: 2px solid slateblue;
+  .container{
     display: flex;
+    flex-direction: row;
+  }
+  .card{
+    border: 2px solid slateblue;
     margin: 20px;
     padding: 50px;
-    height: 70%;
-    width: 70%;
+    height: 15rem;
+    width: 15rem;
     
-
   }
-  .cards div{
-    border: 2px solid pink;
-    margin: 100px;
-    padding: 50px;
+  .card img{
+    margin: 2px;
+    width: 200px;
+    height: 200px;
+    padding: 2px;
   }
   .menu a:before{
     content: '';
@@ -111,4 +123,20 @@ background-color: black;
     width: 100%;
     background-color: white;
   }
-  
+  .skipro{
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+  }
+  .skills{
+    border: 2px solid brown;
+    margin: 20px;
+    padding: 20px;
+  }
+  .profiles{
+    border: 2px solid orange;
+    margin: 20px;
+    padding: 20px;
+  }
