@@ -59,6 +59,7 @@ background-color: black;
   .intro{
     margin: 30px;
     display: flex;
+    flex-direction: column;
     justify-content: center; 
     align-items: center; 
   }
