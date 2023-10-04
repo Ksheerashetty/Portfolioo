@@ -64,9 +64,10 @@ background-color: black;
     align-items: center; 
   }
   .intro-heading{
-    color: gray;
+    color: rgb(255, 255, 255);
     font-size: xx-large;
     font-weight: bolder;
+    margin: 100px;
   }
   .about{
     margin: 10px;
