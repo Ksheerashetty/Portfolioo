@@ -92,6 +92,7 @@ background-color: black;
     justify-content: space-between;
   }
   .container{
+    border: 2px solid salmon;
     display: flex;
     flex-direction: row;
   }
@@ -101,9 +102,11 @@ background-color: black;
     padding: 50px;
     height: 15rem;
     width: 15rem;
+    text-align: center;
     
   }
   .card img{
+    border: 2px solid palevioletred;
     margin: 2px;
     width: 200px;
     height: 200px;
@@ -139,4 +142,9 @@ background-color: black;
     border: 2px solid orange;
     margin: 20px;
     padding: 20px;
+  }
+  .card h6{
+    padding-top: 0;
+    font-weight: bolder;
+    font-size: large;
   }
