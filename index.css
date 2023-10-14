@@ -29,13 +29,7 @@ background-color: black;
   padding: 10px;
   display: flex;
   gap: 2rem;
-
 }
-.theme i{
-  padding: 10px;
-  margin: 5px;
-}
-
 .menu a{
   text-decoration: none;
   color: white;
@@ -43,108 +37,219 @@ background-color: black;
   font-size: medium;
   font-weight: 500;
 }
+.menu a:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 0%;
+  background:silver;
+  transition: all 0.4s ease;
+}
+.menu  a:hover:before{
+  width: 100%;
+  background-color: white;
+  /* background: linear-gradient(45deg, cyan, #7a00ff, #ff00c8); */
 
-  .pic {
-    width: 500px;
+}
+.theme i{
+  padding: 10px;
+  margin: 5px;
+}
+.intro{
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+.intro-heading{
+  color: gray;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.pic {
+    width: 600px;
     height: 500px;
     margin: 50px;
-    background-size:cover;
+    filter: grayscale(0%);
     background-image: url("ksheera.jpg");
+    background-size: cover;
     border-radius: 1rem;
-   
-
-  }
-  
+    }
   .pic:hover {
-    background-image: url("ksheera_avatar.png");
-  }
-  .intro{
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    margin-top: 100px;
-   
-  }
-  .intro-heading{
-    color: gray;
-    font-size: xx-large;
-    font-weight: bolder;
-   
+   filter: grayscale(100%);
+   transition: filter 1s;
+   box-shadow: -5px 5px 17px 3px #041faa85;
   }
   .inner{
     display: flex;
     flex-direction: row;
   }
   .about{
-    width: 500px;
+    width: 600px;
     height: 500px;
     margin: 50px;
     border-radius: 1rem;  
-    
   }
+
   .projects{
-    border: 2px solid rgb(170, 238, 224);
+    /* border: 2px solid rgb(170, 238, 224); */
+    margin-top: 100px;
     display: flex;
     flex-direction: column; 
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
   .container{
-    border: 2px solid salmon;
+    /* border: 2px solid salmon; */
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
   .card{
-    border: 2px solid slateblue;
-    margin: 20px;
+    /* border: 2px solid slateblue; */
+    margin: 50px;
     padding: 10px;
-    height: 15rem;
-    width: 15rem;
+    height: 350px;
+    width: 350px;
+    text-align: center; 
     text-align: center;
-    
-  }
-  .card img{
-    border: 2px solid palevioletred;
-    margin: 2px;
-    width: 200px;
-    height: 200px;
-    padding: 2px;
-  }
-  .menu a:before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 1px;
-    width: 0%;
-    background:silver;
-    transition: all 0.4s ease;
-  }
-  .menu  a:hover:before{
-    width: 100%;
-    background-color: white;
-  }
-  .skipro{
-    margin: 20px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    height: 500px;
-  }
-  .skills{
-    border: 2px solid brown;
-    margin: 20px;
-    padding: 20px;
-  }
-  .profiles{
-    border: 2px solid orange;
-    margin: 20px;
-    padding: 20px;
   }
   .card h6{
-    padding-top: 0;
+    text-align: center;
+    margin: 2px;
     font-weight: bolder;
     font-size: large;
+  }
+  .card img{
+    /* border: 2px solid palevioletred; */
+    margin: 2px;
+    width: 300px;
+    height: 300px;
+    padding: 2px;
+    transition: .5s;
+  }
+  .skipro{
+    /* border: 2px solid rgb(96, 116, 215); */
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;  
+  }
+  .skiprocontain{
+    /* border: 2px solid violet; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .skills{
+    /* border: 2px solid rgb(42, 128, 165); */
+    margin-left: 200px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
+  }
+  
+  
+  .skipro h6{
+    /* border: 2px solid rgb(13, 186, 169); */
+    align-self: center;
+    padding: 1px;
+    color: dimgray;
+    font-weight: bolder;
+    font-size: xx-large;
+  }
+  /* .skinner{
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    overflow: hidden;
+  }
+
+  .skinner:hover {
+    color: cyan;
+    box-shadow: 0 0 8px 2px #00d7c3;
+     /*box shadow effect
+    border: 1px solid #00d7c3;
+    cursor: pointer;
+  } */
+  .skinner {
+    border: 1px solid white;
+    padding: 15px;
+    text-align: center;
+    margin: 15px;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+}
+.skinner:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #00ffee, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+.skinner:hover{
+  border: 1px solid transparent;
+}
+.skinner:active {
+    color: #000;
+  
+}
+.skinner:active:after {
+    background: transparent;
+   
+}
+.skinner:hover:before {
+    opacity: 1;
+   
+}
+.skinner:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+   
+}
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+} 
+  .profiles{
+    /* border: 2px solid orange; */
+    margin-left: 20px;
+    margin-right: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+  }
+  .skinner img{
+    height: 48px;
+    width: 48px;
   }
