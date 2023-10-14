@@ -69,6 +69,7 @@ background-color: black;
   color: gray;
   font-size: xx-large;
   font-weight: bolder;
+  text-align: center;
 }
 .pic {
     width: 600px;
@@ -269,4 +270,18 @@ background-color: black;
   .skinner img{
     height: 48px;
     width: 48px;
+  }
+  .contact{
+    /* border: 1px solid cyan; */
+
+  }
+  .cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .cont div{
+    margin: 20px;
+    padding: 30px;
   }
